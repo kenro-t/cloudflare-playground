@@ -1,0 +1,11 @@
+version: '3'
+services:
+  cloudflare-playground:
+    image: node:latest
+    ports:
+      - 4500:4500
+    volumes:
+      - ..:/workspace/cloudflare-playground
+    tty: true
+    # restart: always
+    init: true
